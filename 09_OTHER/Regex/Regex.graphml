@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="961.4">
+      <data key="entry">true</data>
+    </node>
+    <edge source="961.4" target="685.43">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">50</data>
+      <data key="threadId">0</data>
+      <data key="assumption">_20_7c_7c_20_constarray[0L] = ' '; _20_7c_7c_20_constarray[1L] = '|'; _20_7c_7c_20_constarray[2L] = '|'; _20_7c_7c_20_constarray[3L] = ' ';</data>
+      <data key="assumption.scope">__CPROVER_initialize</data>
+    </edge>
+    <node id="685.43"/>
+    <edge source="685.43" target="688.44">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">464</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.name = &amp;Regex;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="688.44"/>
+    <edge source="688.44" target="691.45">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">465</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isAnnotation = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="691.45"/>
+    <edge source="691.45" target="694.46">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">466</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isArray = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="694.46"/>
+    <edge source="694.46" target="697.47">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">467</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isInterface = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="697.47"/>
+    <edge source="697.47" target="700.48">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">468</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isSynthetic = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="700.48"/>
+    <edge source="700.48" target="703.49">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">469</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isInterface = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="703.49"/>
+    <edge source="703.49" target="706.50">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">470</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isMemberClass = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="706.50"/>
+    <edge source="706.50" target="973.52">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">471</data>
+      <data key="threadId">0</data>
+      <data key="assumption">Regex.isEnum = false;</data>
+      <data key="assumption.scope">java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V</data>
+    </edge>
+    <node id="973.52"/>
+    <edge source="973.52" target="354.132">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">50</data>
+      <data key="threadId">0</data>
+      <data key="assumption">_20_7c_7c_20_return_value = 0;</data>
+      <data key="assumption.scope">__CPROVER_initialize</data>
+    </edge>
+    <node id="354.132"/>
+    <edge source="354.132" target="359.133">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">50</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="359.133"/>
+    <edge source="359.133" target="361.135">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">50</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="361.135"/>
+    <edge source="361.135" target="466.152">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">50</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="466.152"/>
+    <edge source="466.152" target="267.157">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">1</data>
+      <data key="threadId">0</data>
+      <data key="assumption">this = &amp;Regex@class_model;</data>
+      <data key="assumption.scope">java</data>
+    </edge>
+    <node id="267.157"/>
+    <edge source="267.157" target="270.161">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">412</data>
+      <data key="threadId">0</data>
+      <data key="assumption">this = &amp;Regex@class_model;</data>
+      <data key="assumption.scope">java</data>
+    </edge>
+    <node id="270.161"/>
+    <edge source="270.161" target="271.162">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">412</data>
+      <data key="threadId">0</data>
+      <data key="assumption">loader = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.desiredAssertionStatus:()Z</data>
+    </edge>
+    <node id="271.162"/>
+    <edge source="271.162" target="276.166">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">414</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="276.166"/>
+    <edge source="276.166" target="467.173">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">415</data>
+      <data key="threadId">0</data>
+      <data key="assumption">clazz = &amp;Regex@class_model;</data>
+      <data key="assumption.scope">java</data>
+    </edge>
+    <node id="467.173"/>
+    <edge source="467.173" target="481.184">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">1</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="481.184"/>
+    <edge source="481.184" target="364.190">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">1</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="364.190"/>
+    <edge source="364.190" target="370.200">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="370.200"/>
+    <edge source="370.200" target="378.201">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="378.201"/>
+    <edge source="378.201" target="380.205">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="380.205"/>
+    <edge source="380.205" target="186.208">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="186.208"/>
+    <edge source="186.208" target="187.209">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="187.209"/>
+    <edge source="187.209" target="190.212">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2a = (void *)&amp;java.lang.String.Literal..@java.lang.Object.@class_identifier;</data>
+      <data key="assumption.scope">java::Regex.filter:(Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="190.212"/>
+    <edge source="190.212" target="192.219">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="192.219"/>
+    <edge source="192.219" target="129.231">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="129.231"/>
+    <edge source="129.231" target="88.237">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="88.237"/>
+    <edge source="88.237" target="89.238">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 1;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.238"/>
+    <edge source="89.238" target="96.243">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="96.243"/>
+    <edge source="96.243" target="97.244">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="97.244"/>
+    <edge source="97.244" target="99.248">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="99.248"/>
+    <edge source="99.248" target="10.257">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="10.257"/>
+    <edge source="10.257" target="102.307">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">3000</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="102.307"/>
+    <edge source="102.307" target="103.308">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="103.308"/>
+    <edge source="103.308" target="105.312">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="105.312"/>
+    <edge source="105.312" target="110.320">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.320"/>
+    <edge source="110.320" target="113.324">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="113.324"/>
+    <edge source="113.324" target="89.326">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = -143392768;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.326"/>
+    <edge source="89.326" target="136.331">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="136.331"/>
+    <edge source="136.331" target="138.338">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="138.338"/>
+    <edge source="138.338" target="88.344">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="88.344"/>
+    <edge source="88.344" target="89.345">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 1;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.345"/>
+    <edge source="89.345" target="96.350">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="96.350"/>
+    <edge source="96.350" target="97.351">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="97.351"/>
+    <edge source="97.351" target="99.355">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="99.355"/>
+    <edge source="99.355" target="10.364">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="10.364"/>
+    <edge source="10.364" target="102.414">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">3000</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="102.414"/>
+    <edge source="102.414" target="103.415">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="103.415"/>
+    <edge source="103.415" target="105.419">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="105.419"/>
+    <edge source="105.419" target="110.427">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.427"/>
+    <edge source="110.427" target="113.431">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="113.431"/>
+    <edge source="113.431" target="89.433">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 1;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.433"/>
+    <edge source="89.433" target="145.438">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="145.438"/>
+    <edge source="145.438" target="199.441">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="199.441"/>
+    <edge source="199.441" target="207.443">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="207.443"/>
+    <edge source="207.443" target="208.444">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="208.444"/>
+    <edge source="208.444" target="210.448">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="210.448"/>
+    <edge source="210.448" target="157.454">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="157.454"/>
+    <edge source="157.454" target="159.456">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1562</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="159.456"/>
+    <edge source="159.456" target="167.461">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="167.461"/>
+    <edge source="167.461" target="176.469">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="176.469"/>
+    <edge source="176.469" target="533.473">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="533.473"/>
+    <edge source="533.473" target="544.476">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">148</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="544.476"/>
+    <edge source="544.476" target="546.480">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="546.480"/>
+    <edge source="546.480" target="549.486">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="549.486"/>
+    <edge source="549.486" target="551.490">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="551.490"/>
+    <edge source="551.490" target="554.496">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="554.496"/>
+    <edge source="554.496" target="213.506">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="213.506"/>
+    <edge source="213.506" target="190.510">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="190.510"/>
+    <edge source="190.510" target="192.517">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="192.517"/>
+    <edge source="192.517" target="129.529">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="129.529"/>
+    <edge source="129.529" target="88.535">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="88.535"/>
+    <edge source="88.535" target="89.536">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 1;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.536"/>
+    <edge source="89.536" target="96.541">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="96.541"/>
+    <edge source="96.541" target="97.542">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="97.542"/>
+    <edge source="97.542" target="99.546">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="99.546"/>
+    <edge source="99.546" target="10.555">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="10.555"/>
+    <edge source="10.555" target="102.605">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">3000</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="102.605"/>
+    <edge source="102.605" target="103.606">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="103.606"/>
+    <edge source="103.606" target="105.610">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="105.610"/>
+    <edge source="105.610" target="110.618">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.618"/>
+    <edge source="110.618" target="113.622">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="113.622"/>
+    <edge source="113.622" target="89.624">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 0;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.624"/>
+    <edge source="89.624" target="136.629">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="136.629"/>
+    <edge source="136.629" target="138.636">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="138.636"/>
+    <edge source="138.636" target="88.642">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="88.642"/>
+    <edge source="88.642" target="89.643">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 1;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.643"/>
+    <edge source="89.643" target="96.648">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="96.648"/>
+    <edge source="96.648" target="97.649">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="97.649"/>
+    <edge source="97.649" target="99.653">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="99.653"/>
+    <edge source="99.653" target="10.662">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="10.662"/>
+    <edge source="10.662" target="102.712">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">3000</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="102.712"/>
+    <edge source="102.712" target="103.713">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="103.713"/>
+    <edge source="103.713" target="105.717">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="105.717"/>
+    <edge source="105.717" target="110.725">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.725"/>
+    <edge source="110.725" target="113.729">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="113.729"/>
+    <edge source="113.729" target="89.731">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = -1216479232;</data>
+      <data key="assumption.scope">java::Regex.recRemove:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</data>
+    </edge>
+    <node id="89.731"/>
+    <edge source="89.731" target="145.736">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="145.736"/>
+    <edge source="145.736" target="199.739">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="199.739"/>
+    <edge source="199.739" target="207.741">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="207.741"/>
+    <edge source="207.741" target="208.742">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="208.742"/>
+    <edge source="208.742" target="210.746">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="210.746"/>
+    <edge source="210.746" target="157.752">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="157.752"/>
+    <edge source="157.752" target="159.754">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1562</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="159.754"/>
+    <edge source="159.754" target="167.759">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="167.759"/>
+    <edge source="167.759" target="176.767">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="176.767"/>
+    <edge source="176.767" target="533.771">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">1563</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="533.771"/>
+    <edge source="533.771" target="544.774">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">148</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="544.774"/>
+    <edge source="544.774" target="546.778">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="546.778"/>
+    <edge source="546.778" target="549.784">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="549.784"/>
+    <edge source="549.784" target="551.788">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="551.788"/>
+    <edge source="551.788" target="554.794">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="554.794"/>
+    <edge source="554.794" target="561.796">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="561.796"/>
+    <edge source="561.796" target="563.800">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="563.800"/>
+    <edge source="563.800" target="583.808">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="583.808"/>
+    <edge source="583.808" target="566.829">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">2053</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="566.829"/>
+    <edge source="566.829" target="213.839">
+      <data key="originfile">org/cprover/CProverString.java</data>
+      <data key="startline">151</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="213.839"/>
+    <edge source="213.839" target="381.842">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="381.842"/>
+    <edge source="381.842" target="387.844">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="387.844"/>
+    <edge source="387.844" target="389.848">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="389.848"/>
+    <edge source="389.848" target="229.856">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="229.856"/>
+    <edge source="229.856" target="392.872">
+      <data key="originfile">java/lang/String.java</data>
+      <data key="startline">2882</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="392.872"/>
+    <edge source="392.872" target="399.874">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="399.874"/>
+    <edge source="399.874" target="403.887">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="403.887"/>
+    <edge source="403.887" target="261.890">
+      <data key="originfile">Regex.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="261.890"/>
+    <edge source="261.890" target="490.893">
+      <data key="originfile">java/lang/AssertionError.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="490.893"/>
+    <edge source="490.893" target="494.896">
+      <data key="originfile">java/lang/Error.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="494.896"/>
+    <edge source="494.896" target="2.897">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">264</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2.897"/>
+    <edge source="2.897" target="497.899">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="497.899"/>
+    <edge source="497.899" target="404.903">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">201</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="404.903">
+      <data key="violation">true</data>
+    </node>
+  </graph>
+</graphml>

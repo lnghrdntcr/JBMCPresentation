@@ -1,0 +1,328 @@
+JBMC version 5.12 (cbmc-5.11-2560-g01255db77) 64-bit x86_64 linux
+Parsing CriticalSection.class
+Java main class: CriticalSection
+failed to load class `java.io.ObjectOutputStream'
+failed to load class `java.io.ObjectInputStream'
+failed to load class `java.io.PrintWriter'
+failed to load class `java.io.PrintStream'
+failed to load class `java.lang.Appendable'
+failed to load class `java.io.IOException'
+failed to load class `java.io.BufferedInputStream'
+failed to load class `java.lang.Comparable'
+failed to load class `java.lang.invoke.MethodHandles'
+failed to load class `java.util.PrimitiveIterator'
+failed to load class `java.lang.invoke.LambdaMetafactory'
+failed to load class `java.lang.invoke.MethodHandle'
+failed to load class `java.lang.invoke.MethodType'
+failed to load class `java.lang.invoke.MethodHandles$Lookup'
+failed to load class `java.lang.invoke.CallSite'
+failed to load class `java.util.function.IntConsumer'
+failed to load class `java.util.NoSuchElementException'
+failed to load class `java.util.PrimitiveIterator$OfInt'
+failed to load class `java.util.stream.IntStream'
+failed to load class `java.lang.Number'
+failed to load class `java.lang.Long'
+failed to load class `java.util.HashMap'
+failed to load class `java.util.Map'
+failed to load class `java.util.Locale'
+failed to load class `java.lang.Deprecated'
+failed to load class `java.util.Arrays'
+failed to load class `java.io.ObjectStreamException'
+failed to load class `java.io.InvalidObjectException'
+failed to load class `java.io.Serializable'
+failed to load class `java.lang.annotation.Annotation'
+failed to load class `java.lang.ClassLoader'
+failed to load class `java.lang.CharacterData'
+failed to load class `java.lang.Byte'
+failed to load class `java.util.Spliterators'
+failed to load class `java.util.Spliterator$OfInt'
+failed to load class `java.util.stream.StreamSupport'
+failed to load class `java.util.Spliterator'
+failed to load class `java.util.function.Supplier'
+failed to load class `java.io.UnsupportedEncodingException'
+failed to load class `java.util.Comparator'
+failed to load class `java.lang.Boolean'
+failed to load class `java.lang.Double'
+failed to load class `java.lang.Float'
+failed to load class `java.lang.Iterable'
+failed to load class `java.util.Iterator'
+failed to load class `java.nio.charset.Charset'
+failed to load class `java.lang.StackTraceElement'
+failed to load class `java.util.Objects'
+failed to load class `java.lang.ThreadGroup'
+failed to load class `java.lang.FunctionalInterface'
+Converting
+Method: java::java.lang.Object.getClass
+ could not parse signature: ()Ljava/lang/Class<*>;
+ Unsupported class signature: wild card generic
+ reverting to descriptor: ()Ljava/lang/Class;
+Method: java::java.lang.String.join
+ could not parse signature: (Ljava/lang/CharSequence;Ljava/lang/Iterable<+Ljava/lang/CharSequence;>;)Ljava/lang/String;
+ Unsupported class signature: wild card generic
+ reverting to descriptor: (Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+Method: java::java.lang.Class.forName
+ could not parse signature: (Ljava/lang/String;)Ljava/lang/Class<*>;
+ Unsupported class signature: wild card generic
+ reverting to descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+Method: java::java.lang.Class.forName
+ could not parse signature: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class<*>;
+ Unsupported class signature: wild card generic
+ reverting to descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+Method: java::java.lang.Class.desiredAssertionStatus0
+ could not parse signature: (Ljava/lang/Class<*>;)Z
+ Unsupported class signature: wild card generic
+ reverting to descriptor: (Ljava/lang/Class;)Z
+Method: java::org.cprover.CProver.nondetWithNullForNotModelled
+ could not parse signature: <T:Ljava/lang/Object;>()TT;
+ Unsupported class signature: Cannot currently parse bounds on generic types
+ reverting to descriptor: ()Ljava/lang/Object;
+Method: java::org.cprover.CProver.nondetWithoutNullForNotModelled
+ could not parse signature: <T:Ljava/lang/Object;>()TT;
+ Unsupported class signature: Cannot currently parse bounds on generic types
+ reverting to descriptor: ()Ljava/lang/Object;
+Method: java::java.lang.Character$UnicodeScript.<init>
+ signature: ()V
+ descriptor: (Ljava/lang/String;I)V
+ different number of parameters, reverting to descriptor
+Class: java.lang.Enum
+ could not parse signature: <E:Ljava/lang/Enum<TE;>;>Ljava/lang/Object;Ljava/lang/Comparable<TE;>;Ljava/io/Serializable;
+ Unsupported class signature: Failed to find generic signature closing delimiter (or recursive generic): java/lang/Enum<TE
+ ignoring that the class is generic
+Method: java::java.lang.Enum.valueOf
+ could not parse signature: <T:Ljava/lang/Enum<TT;>;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)TT;
+ Unsupported class signature: Cannot currently parse bounds on generic types
+ reverting to descriptor: (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+Java: added 2207 String or Class constant symbols
+Generating GOTO Program
+Running GOTO functions transformation passes
+Running with 16 object bits, 48 offset bits (default)
+Starting Bounded Model Checking
+Unwinding loop __CPROVER__start.0 iteration 1  thread 0
+Unwinding loop __CPROVER__start.0 iteration 2  thread 0
+Unwinding loop __CPROVER__start.0 iteration 3  thread 0
+Unwinding loop __CPROVER__start.0 iteration 4  thread 0
+Not unwinding loop __CPROVER__start.0 iteration 5  thread 0
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding loop java::CriticalSection.main:([Ljava/lang/String;)V.0 iteration 1 file CriticalSection.java line 51 function java::CriticalSection.main:([Ljava/lang/String;)V bytecode-index 10 thread 0
+Unwinding loop java::CriticalSection.main:([Ljava/lang/String;)V.0 iteration 2 file CriticalSection.java line 51 function java::CriticalSection.main:([Ljava/lang/String;)V bytecode-index 10 thread 0
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding loop java::CriticalSection.run:()V.0 iteration 1 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 1
+Unwinding loop java::CriticalSection.run:()V.0 iteration 2 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 1
+Unwinding loop java::CriticalSection.run:()V.0 iteration 3 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 1
+Unwinding loop java::CriticalSection.run:()V.0 iteration 4 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 1
+Not unwinding loop java::CriticalSection.run:()V.0 iteration 5 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding loop java::CriticalSection.run:()V.1 iteration 1 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 1
+Unwinding loop java::CriticalSection.run:()V.1 iteration 2 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 1
+Unwinding loop java::CriticalSection.run:()V.1 iteration 3 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 1
+Unwinding loop java::CriticalSection.run:()V.1 iteration 4 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 1
+Not unwinding loop java::CriticalSection.run:()V.1 iteration 5 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+aborting path on assume(false) at file CriticalSection.java line 31 function java::CriticalSection.run:()V bytecode-index 37 thread 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding loop java::CriticalSection.run:()V.0 iteration 1 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 2
+Unwinding loop java::CriticalSection.run:()V.0 iteration 2 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 2
+Unwinding loop java::CriticalSection.run:()V.0 iteration 3 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 2
+Unwinding loop java::CriticalSection.run:()V.0 iteration 4 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 2
+Not unwinding loop java::CriticalSection.run:()V.0 iteration 5 file CriticalSection.java line 20 function java::CriticalSection.run:()V bytecode-index 8 thread 2
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding loop java::CriticalSection.run:()V.1 iteration 1 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 2
+Unwinding loop java::CriticalSection.run:()V.1 iteration 2 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 2
+Unwinding loop java::CriticalSection.run:()V.1 iteration 3 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 2
+Unwinding loop java::CriticalSection.run:()V.1 iteration 4 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 2
+Not unwinding loop java::CriticalSection.run:()V.1 iteration 5 file CriticalSection.java line 25 function java::CriticalSection.run:()V bytecode-index 18 thread 2
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+Unwinding recursion java::CriticalSection::clinit_wrapper iteration 1
+aborting path on assume(false) at file CriticalSection.java line 31 function java::CriticalSection.run:()V bytecode-index 37 thread 2
+Adding SC constraints
+Shared java::CriticalSection.block0: 10R/12W
+Shared java::CriticalSection.block1: 10R/12W
+Shared java::CriticalSection.inCritSect: 916R/8W
+Shared java::CriticalSection.$assertionsDisabled: 2R/8W
+Shared java::CriticalSection__CPROVER_clinit_state: 6R/15W
+Shared __CPROVER__next_thread_id: 2R/3W
+Shared symex_dynamic::dynamic_object13..length: 16R/3W
+Shared symex_dynamic::dynamic_object13..data: 164R/3W
+Shared symex_dynamic::dynamic_14_array: 12R/7W
+Shared symex_dynamic::dynamic_object15..@java.lang.Thread..@java.lang.Object..@class_identifier: 1R/2W
+Shared symex_dynamic::dynamic_object15..@java.lang.Thread..target: 3R/3W
+Shared symex_dynamic::dynamic_object15..i: 20R/3W
+Shared symex_dynamic::dynamic_object16..@java.lang.Thread..@java.lang.Object..@class_identifier: 1R/2W
+Shared symex_dynamic::dynamic_object16..@java.lang.Thread..target: 3R/3W
+Shared symex_dynamic::dynamic_object16..i: 26R/3W
+Shared symex_dynamic::dynamic_object17..length: 16R/4W
+Shared symex_dynamic::dynamic_object17..data: 164R/4W
+Shared symex_dynamic::dynamic_18_array: 12R/6W
+Shared symex_dynamic::dynamic_object19..length: 16R/4W
+Shared symex_dynamic::dynamic_object19..data: 164R/4W
+Shared symex_dynamic::dynamic_20_array: 12R/6W
+Shared symex_dynamic::dynamic_object21..length: 16R/4W
+Shared symex_dynamic::dynamic_object21..data: 164R/4W
+Shared symex_dynamic::dynamic_22_array: 12R/6W
+Shared symex_dynamic::dynamic_object24..length: 8R/4W
+Shared symex_dynamic::dynamic_object24..data: 112R/4W
+Shared symex_dynamic::dynamic_25_array: 6R/4W
+Shared symex_dynamic::dynamic_object26..length: 8R/4W
+Shared symex_dynamic::dynamic_object26..data: 112R/4W
+Shared symex_dynamic::dynamic_27_array: 6R/4W
+Shared symex_dynamic::dynamic_object28..length: 8R/4W
+Shared symex_dynamic::dynamic_object28..data: 112R/4W
+Shared symex_dynamic::dynamic_29_array: 6R/4W
+size of program expression: 85882 steps
+no slicing due to threads
+Generated 108 VCC(s), 36 remaining after simplification
+Passing problem to string refinement loop with MiniSAT 2.2.1 without simplifier
+converting SSA
+Running string refinement loop with MiniSAT 2.2.1 without simplifier
+BV-Refinement: post-processing
+BV-Refinement: iteration 1
+1584809 variables, 7216431 clauses
+SAT checker: instance is UNSATISFIABLE
+BV-Refinement: got UNSAT, and the proof passes => UNSAT
+Total iterations: 1
+Runtime decision procedure: 348.109s
+
+** Results:
+[array-create-negative-size.1] Array size should be >= 0: SUCCESS
+[array-create-negative-size.2] Array size should be >= 0: SUCCESS
+[array-create-negative-size.3] Array size should be >= 0: SUCCESS
+[array-create-negative-size.4] Array size should be >= 0: SUCCESS
+[array-create-negative-size.5] Array size should be >= 0: SUCCESS
+[array-create-negative-size.6] Array size should be >= 0: SUCCESS
+[array-create-negative-size.7] Array size should be >= 0: SUCCESS
+[array-create-negative-size.8] Array size should be >= 0: SUCCESS
+[array-create-negative-size.9] Array size should be >= 0: SUCCESS
+CriticalSection.java function java::CriticalSection.<clinit>:()V
+[java::CriticalSection.<clinit>:()V.null-pointer-exception.1] line 2 Null pointer check: SUCCESS
+[java::CriticalSection.<clinit>:()V.array-create-negative-size.1] line 7 Array size should be >= 0: SUCCESS
+
+CriticalSection.java function java::CriticalSection.<init>:(I)V
+[java::CriticalSection.<init>:(I)V.null-pointer-exception.1] line 11 Null pointer check: SUCCESS
+[java::CriticalSection.<init>:(I)V.null-pointer-exception.2] line 12 Null pointer check: SUCCESS
+
+CriticalSection.java function java::CriticalSection.run:()V
+[java::CriticalSection.run:()V.null-pointer-exception.1] line 18 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.2] line 23 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-high.1] line 28 Array index should be < length: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-low.1] line 28 Array index should be >= 0: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.4] line 28 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.3] line 28 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.6] line 31 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.assertion.1] line 31 assertion at file CriticalSection.java line 31 function java::CriticalSection.run:()V bytecode-index 37: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.7] line 31 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-low.3] line 31 Array index should be >= 0: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-high.2] line 31 Array index should be < length: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-low.2] line 31 Array index should be >= 0: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.5] line 31 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-high.3] line 31 Array index should be < length: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-low.4] line 34 Array index should be >= 0: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.9] line 34 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.8] line 34 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.array-index-out-of-bounds-high.4] line 34 Array index should be < length: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.10] line 37 Null pointer check: SUCCESS
+[java::CriticalSection.run:()V.null-pointer-exception.11] line 41 Null pointer check: SUCCESS
+
+CriticalSection.java function java::CriticalSection.main:([Ljava/lang/String;)V
+[java::CriticalSection.main:([Ljava/lang/String;)V.1] line 51 no uncaught exception: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.array-index-out-of-bounds-high.1] line 52 Array index should be < length: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.array-index-out-of-bounds-low.1] line 52 Array index should be >= 0: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.1] line 52 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.2] line 55 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.3] line 56 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.4] line 58 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.5] line 59 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.6] line 61 Null pointer check: SUCCESS
+[java::CriticalSection.main:([Ljava/lang/String;)V.null-pointer-exception.7] line 62 Null pointer check: SUCCESS
+
+java/lang/AssertionError.java function java::java.lang.AssertionError.<init>:()V
+[java::java.lang.AssertionError.<init>:()V.null-pointer-exception.1] line 49 Null pointer check: SUCCESS
+
+java/lang/Class.java function java::java.lang.Class.getName:()Ljava/lang/String;
+[java::java.lang.Class.getName:()Ljava/lang/String;.null-pointer-exception.1] line 153 Null pointer check: SUCCESS
+
+java/lang/Class.java function java::java.lang.Class.desiredAssertionStatus:()Z
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.1] line 412 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.2] line 419 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.3] line 419 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.4] line 420 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.6] line 421 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.5] line 421 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.null-pointer-exception.7] line 423 Null pointer check: SUCCESS
+[java::java.lang.Class.desiredAssertionStatus:()Z.pointer_dereference.1] line 423 throwing null in anonlocal::3a: SUCCESS
+
+java/lang/Class.java function java::java.lang.Class.cproverNondetInitialize:()V
+[java::java.lang.Class.cproverNondetInitialize:()V.null-pointer-exception.1] line 445 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverNondetInitialize:()V.null-pointer-exception.2] line 446 Null pointer check: SUCCESS
+
+java/lang/Class.java function java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.1] line 464 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.2] line 465 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.3] line 466 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.4] line 467 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.5] line 468 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.6] line 469 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.7] line 470 Null pointer check: SUCCESS
+[java::java.lang.Class.cproverInitializeClassLiteral:(Ljava/lang/String;ZZZZZZZ)V.null-pointer-exception.8] line 471 Null pointer check: SUCCESS
+
+java/lang/Error.java function java::java.lang.Error.<init>:()V
+[java::java.lang.Error.<init>:()V.null-pointer-exception.1] line 58 Null pointer check: SUCCESS
+
+java/lang/Exception.java function java::java.lang.Exception.<init>:()V
+[java::java.lang.Exception.<init>:()V.null-pointer-exception.1] line 54 Null pointer check: SUCCESS
+
+java/lang/NullPointerException.java function java::java.lang.NullPointerException.<init>:()V
+[java::java.lang.NullPointerException.<init>:()V.null-pointer-exception.1] line 33 Null pointer check: SUCCESS
+
+java/lang/Object.java function java::java.lang.Object.<init>:()V
+[java::java.lang.Object.<init>:()V.null-pointer-exception.1] line 40 Null pointer check: SUCCESS
+
+java/lang/Object.java function java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.pointer_dereference.1] line 118 throwing null in new_tmp0: SUCCESS
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.null-pointer-exception.2] line 118 Null pointer check: SUCCESS
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.null-pointer-exception.1] line 118 Null pointer check: SUCCESS
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.null-pointer-exception.3] line 123 Null pointer check: SUCCESS
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.null-pointer-exception.5] line 124 Null pointer check: SUCCESS
+[java::java.lang.Object.monitorenter:(Ljava/lang/Object;)V.null-pointer-exception.4] line 124 Null pointer check: SUCCESS
+
+java/lang/Object.java function java::java.lang.Object.monitorexit:(Ljava/lang/Object;)V
+[java::java.lang.Object.monitorexit:(Ljava/lang/Object;)V.null-pointer-exception.1] line 149 Null pointer check: SUCCESS
+[java::java.lang.Object.monitorexit:(Ljava/lang/Object;)V.null-pointer-exception.2] line 149 Null pointer check: SUCCESS
+
+java/lang/RuntimeException.java function java::java.lang.RuntimeException.<init>:()V
+[java::java.lang.RuntimeException.<init>:()V.null-pointer-exception.1] line 32 Null pointer check: SUCCESS
+
+java/lang/Thread.java function java::java.lang.Thread.<init>:()V
+[java::java.lang.Thread.<init>:()V.null-pointer-exception.1] line 399 Null pointer check: SUCCESS
+[java::java.lang.Thread.<init>:()V.null-pointer-exception.2] line 400 Null pointer check: SUCCESS
+[java::java.lang.Thread.<init>:()V.null-pointer-exception.3] line 401 Null pointer check: SUCCESS
+
+java/lang/Thread.java function java::java.lang.Thread.start:()V
+[java::java.lang.Thread.start:()V.null-pointer-exception.1] line 663 Null pointer check: SUCCESS
+[java::java.lang.Thread.start:()V.null-pointer-exception.2] line 663 Null pointer check: SUCCESS
+
+java/lang/Throwable.java function java::java.lang.Throwable.<init>:()V
+[java::java.lang.Throwable.<init>:()V.null-pointer-exception.2] line 201 Null pointer check: SUCCESS
+[java::java.lang.Throwable.<init>:()V.null-pointer-exception.1] line 264 Null pointer check: SUCCESS
+
+** 0 of 83 failed (1 iterations)
+VERIFICATION SUCCESSFUL
