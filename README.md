@@ -10,3 +10,5 @@ You can find more information about compilation on the [GitHub page](https://git
 In the root folder of the repo there are some examples used during the presentation, in order to explore the functionalities of the tool.
 
 In the `09_OTHER` folder there are some tests not using during the presentation. In particular, in the `VM Examples` subfolder the examples from the VM artifact provided in the website are present.
+
+Please note that `jbmc` on our test machine was an alias for `jbmc --classpath $JBMC_DIR/lib/java-models-library/target/core-models.jar:. --java-threading`
